@@ -30,8 +30,8 @@ spec:
                 mountPath: /demo-data
               - name: backup-volume
                 mountPath: /backups
-       restartPolicy: OnFailure
-       volumes:
+        restartPolicy: OnFailure
+        volumes:
          - name: data-volume
            hostPath: 
              path: /demo-data
