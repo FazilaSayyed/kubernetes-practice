@@ -10,8 +10,8 @@ spec:
        template: 
           metadata:
              name: nginx-cronjob-backup
-          labels:
-            app: nginx-cronjob-backup
+           labels:
+             app: nginx-cronjob-backup
        spec: 
          containers: 
          - name: nginx-cronjob-pod
