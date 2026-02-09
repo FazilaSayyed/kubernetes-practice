@@ -22,7 +22,7 @@ spec:
               echo "Backup Started"
               mkdir -p /demo-data
               mkdir -p /backups
-              cp -r /demo-data/* /backups/
+              cp -r /demo-data/ /backups/
               echo "Backup Completed"
             volumeMounts:
             - name: data-volume
