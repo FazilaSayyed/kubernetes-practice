@@ -2,11 +2,11 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: local-pvc
-  namspace: nginx
+  namespace: nginx
 spec:
   accessModes:
    - ReadWriteOnce
   resources:
-    request: 
+    requests: 
       storage: 1Gi
   storageClassName: local-storage
