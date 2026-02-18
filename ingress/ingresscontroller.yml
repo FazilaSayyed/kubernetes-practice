@@ -4,24 +4,24 @@ metadata:
   name: nginx-todo-ingress
   namespace: nginx
 spec:
- ingressClassName: nginx
- rules:
- - http:
-   paths:
-    - pathType: Prefix
-      path: /nginx
-      backend:
-      service:
-       name: nginx-service
-       port: 
-        number: 80
-    - pathType: Prefix
-      path: /todo-app
-      backend:
-      service:
-        name: todo-service
-        port:
-          number: 8080
-      
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - path: /nginx
+        pathType: Prefix
+        backend:
+          service:
+            name: nginx-service
+            port:
+              number: 80
+      - path: /todo-app
+        pathType: Prefix
+        backend:
+          service:
+            name: todo-service
+            port:
+              number: 8080
+
    
   
