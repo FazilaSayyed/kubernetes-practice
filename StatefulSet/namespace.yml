@@ -1,6 +1,7 @@
 kind: Namespace
 apiVersion: v1
 metadata: 
-  name: statefulset
+  name: mysql
 
   
+
