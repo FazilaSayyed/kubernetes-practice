@@ -5,6 +5,7 @@ metadata:
   namespace: mysql
 
 spec:
+  serviceName: mysql-service
   replicas: 3
   selector:
     matchLabels:
@@ -35,4 +36,5 @@ spec:
          resources:
           requests:
             storage: 1Gi
+
   
