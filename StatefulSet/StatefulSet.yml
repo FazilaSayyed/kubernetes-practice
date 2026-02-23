@@ -28,7 +28,7 @@ spec:
       volumeMounts:
         - name: mysql-data
           mountPath: /var/lib/mysql
-     volumeClaimTemplates:
+     volumeClaimTemplate:
      - metadata:
         name: mysql-data
        spec:
@@ -38,3 +38,4 @@ spec:
             storage: 1Gi
 
   
+
