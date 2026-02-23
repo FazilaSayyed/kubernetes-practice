@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: mysql-service
-  namespace: statefulset
+  namespace: mysql
 spec:
   clusterIP: None
   selector:
@@ -13,3 +13,4 @@ spec:
     port: 3306
 
     targetPort: 3306
+
