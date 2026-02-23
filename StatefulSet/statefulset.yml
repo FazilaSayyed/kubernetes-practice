@@ -2,7 +2,7 @@ kind: StatefulSet
 apiVersion: apps/v1
 metadata:
   name: mysql-statefulset
-  namespace: mysql
+  namespace: statefulset
 
 spec:
   serviceName: mysql-service
@@ -38,3 +38,4 @@ spec:
         resources:
           requests:
             storage: 1Gi
+
